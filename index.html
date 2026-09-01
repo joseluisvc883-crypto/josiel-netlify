@@ -5,88 +5,67 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Josiel | El Inicio a la Felicidad</title>
   <meta name="description" content="José & Daniel (Josiel). 13 de Mayo • Playa de las Tortugas — Nuestra historia, la canción y recuerdos.">
-  <!-- Open Graph básico -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph / Social -->
   <meta property="og:title" content="El Inicio a la Felicidad — José & Daniel (Josiel)">
   <meta property="og:description" content="13 de Mayo • Playa de las Tortugas — Nuestra historia, superando distancias y nuestra canción.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="/social.png">
+  <meta property="og:site_name" content="El Inicio a la Felicidad">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="El Inicio a la Felicidad — José & Daniel (Josiel)">
+  <meta name="twitter:description" content="13 de Mayo • Playa de las Tortugas — Nuestra historia, superando distancias y nuestra canción.">
+  <meta name="twitter:image" content="/social.png">
+
+  <!-- JSON-LD (Event) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "El Inicio a la Felicidad — José & Daniel (Josiel)",
+    "startDate": "2026-05-13",
+    "location": {
+      "@type": "Place",
+      "name": "Playa de las Tortugas",
+      "address": ""
+    },
+    "description": "Celebrando nuestra historia y amor."
+  }
+  </script>
 
   <style>
     :root{
-      --bg:#0f172a;
-      --panel:#1e293b;
-      --accent:#3b82f6;
-      --accent-2:#60a5fa;
-      --muted:#94a3b8;
-      --text:#f8fafc;
-      --highlight:#f59e0b;
-      --card-radius:12px;
-      --max-width:720px;
+      --bg:#0f172a; --panel:#1e293b; --accent:#3b82f6; --accent-2:#60a5fa;
+      --muted:#94a3b8; --text:#f8fafc; --highlight:#f59e0b;
+      --card-radius:12px; --max-width:720px;
     }
-
     html,body{height:100%;}
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-    }
-
-    header{
-      padding: clamp(28px,6vw,60px) 18px;
-      background: linear-gradient(130deg,var(--panel),var(--bg));
-      border-bottom: 3px solid var(--accent);
-      text-align:center;
-    }
-    .wrap{max-width:var(--max-width);margin:0 auto;padding:20px;}
-
-    h1{
-      color:var(--accent-2);
-      margin:0;
-      font-size:clamp(1.6rem,4vw,2.4rem);
-      letter-spacing:0.6px;
-    }
+    body { margin:0; font-family:"Segoe UI",Tahoma, Geneva, Verdana, sans-serif; background:var(--bg); color:var(--text); line-height:1.45; }
+    header{ padding:clamp(28px,6vw,60px) 18px; background:linear-gradient(130deg,var(--panel),var(--bg)); border-bottom:3px solid var(--accent); text-align:center; }
+    .wrap{ max-width:var(--max-width); margin:0 auto; padding:20px; }
+    h1{ color:var(--accent-2); margin:0; font-size:clamp(1.6rem,4vw,2.4rem); }
     h2{ color:var(--muted); margin:8px 0 0; font-weight:300; font-size:1rem; }
     .date{ color:var(--highlight); font-weight:700; margin-top:8px; display:inline-block; }
-
-    main{ padding: 24px 18px 48px; }
-    .cards{ display: grid; gap:18px; grid-template-columns: 1fr; max-width:var(--max-width); margin: 0 auto; }
-
-    .card{
-      background: var(--panel);
-      padding: 20px;
-      border-radius: var(--card-radius);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-      border-left: 4px solid var(--accent);
-      text-align:left;
-    }
+    main{ padding:24px 18px 48px; }
+    .cards{ display:grid; gap:18px; grid-template-columns:1fr; max-width:var(--max-width); margin:0 auto; }
+    .card{ background:var(--panel); padding:20px; border-radius:var(--card-radius); box-shadow:0 6px 18px rgba(0,0,0,0.35); border-left:4px solid var(--accent); text-align:left; }
     .card h3{ margin:0 0 8px 0; color:var(--accent-2); font-size:1.1rem; }
     .card p{ margin:0; color:var(--text); }
     .highlight{ color:var(--highlight); font-weight:700; }
-
-    footer{ text-align:center; color: #94a3b8; padding: 20px 10px; font-size:0.95rem; }
-
-    /* Audio figure */
+    footer{ text-align:center; color:#94a3b8; padding:20px 10px; font-size:0.95rem; }
     figure{ margin:0; }
     figcaption{ margin-top:8px; color:var(--muted); font-size:.9rem; }
-
-    /* Focus styles for keyboard users */
-    :focus{ outline: none; }
-    :focus-visible{ outline: 3px dashed rgba(96,165,250,0.22); outline-offset:3px; border-radius:6px; }
-
-    a { color: var(--accent-2); text-decoration: none; }
-    a:focus-visible, button:focus-visible { outline: 3px solid rgba(59,130,246,0.18); outline-offset:3px; }
-
-    /* Responsive tweaks */
-    @media (min-width:720px){
-      .cards{ grid-template-columns: repeat(1,1fr); }
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
-    }
+    :focus{ outline:none; } :focus-visible{ outline:3px dashed rgba(96,165,250,0.22); outline-offset:3px; border-radius:6px; }
+    a{ color:var(--accent-2); text-decoration:none; }
+    @media (prefers-reduced-motion:reduce){ *{ animation-duration:0.001ms!important; transition-duration:0.001ms!important; } }
+    .rsvp { display:flex; gap:8px; flex-direction:column; }
+    .rsvp input, .rsvp textarea, .rsvp button { padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background:transparent; color:var(--text); }
+    .map { margin-top:12px; border-radius:8px; overflow:hidden; }
   </style>
 </head>
 <body>
@@ -94,9 +73,7 @@
     <div class="wrap">
       <h1>EL INICIO A LA FELICIDAD</h1>
       <h2>José &amp; Daniel (Josiel)</h2>
-      <p class="date" aria-hidden="false">
-        <time datetime="2026-05-13">13 de Mayo</time> • <span aria-label="Lugar">Playa de las Tortugas</span>
-      </p>
+      <p class="date"><time datetime="2026-05-13">13 de Mayo</time> • Playa de las Tortugas</p>
     </div>
   </header>
 
@@ -114,18 +91,58 @@
 
       <article class="card" aria-labelledby="cancion-title">
         <h3 id="cancion-title">Nuestra Canción</h3>
-
         <figure>
           <figcaption><em>"Amor" - Emmanuel Cortés</em></figcaption>
           <audio controls preload="metadata" style="width:100%" aria-label="Reproductor de la canción 'Amor'">
             <source src="cancion.mp3" type="audio/mpeg">
             Tu navegador no soporta el reproductor de audio.
           </audio>
-
           <p style="margin-top:10px; font-size:.95rem; color:var(--muted);">
-            Si el reproductor no funciona, <a href="cancion.mp3" download aria-label="Descargar la canción 'Amor'">descarga la canción aquí</a>.
+            Si el reproductor no funciona, <a href="cancion.mp3" download>descarga la canción aquí</a>.
           </p>
         </figure>
+      </article>
+
+      <!-- RSVP: Netlify Forms -->
+      <article class="card" aria-labelledby="rsvp-title">
+        <h3 id="rsvp-title">Confirma tu asistencia</h3>
+        <!-- Netlify Forms: data-netlify="true" -->
+        <form name="rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="rsvp">
+          <input type="hidden" name="form-name" value="rsvp">
+          <p style="display:none">
+            <label>Si eres humano, deja esto vacío: <input name="bot-field"></label>
+          </p>
+          <label>
+            Nombre
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Asistirás?
+            <select name="attending" required>
+              <option value="">Selecciona...</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label>
+            Mensaje (opcional)
+            <textarea name="message" rows="3"></textarea>
+          </label>
+          <button type="submit">Enviar RSVP</button>
+        </form>
+        <p style="margin-top:10px; color:var(--muted); font-size:.93rem;">Las respuestas se guardan en Netlify Forms (Panel → Forms).</p>
+      </article>
+
+      <!-- Map embed (opcional) -->
+      <article class="card" aria-labelledby="map-title">
+        <h3 id="map-title">Cómo llegar</h3>
+        <div class="map" style="height:220px;">
+          <!-- Replace the src with a real Google Maps/embed or OpenStreetMap iframe if you want -->
+          <iframe
+            src="https://www.google.com/maps?q=Playa+de+las+Tortugas&output=embed"
+            style="width:100%; height:100%; border:0;"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa: Playa de las Tortugas"></iframe>
+        </div>
       </article>
     </section>
   </main>
