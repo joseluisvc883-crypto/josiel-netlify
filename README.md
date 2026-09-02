@@ -1,31 +1,65 @@
-# Josiel — El Inicio a la Felicidad
+# 💝 El Inicio a la Felicidad — Josiel
 
-Página estática lista para desplegar en Netlify.
+Página web conmemorativa de José & Daniel (Josiel) — "El Inicio a la Felicidad"
 
-Contenido:
-- index.html (página principal)
-- netlify.toml (configuración Netlify)
-- cancion.mp3 (opcional: subir si deseas que el audio esté alojado en el repo)
+## 📍 Detalles
 
-Cómo proceder (opciones):
+- **Fecha:** 13 de Mayo
+- **Ubicación:** Playa de las Tortugas
+- **Deploy:** Netlify
+- **URL:** https://zippy-unicorn-bcd0da.netlify.app
 
-1) Yo subo y despliego por ti (recomendado si quieres que lo haga ahora)
-- Confirmas aquí que suba los archivos al repo (y si quieres que incluya cancion.mp3).
-- Yo haré commit de index.html, netlify.toml y README.md (y cancion.mp3 si lo suministras).
-- Te devolveré el enlace del repo y, una vez conectado a Netlify, la URL pública del sitio.
+## 🚀 Características
 
-2) Lo subes tú desde tu máquina
-- Clona el repo: `git clone https://github.com/joseluisvc883-crypto/josiel-netlify.git`
-- Copia index.html, netlify.toml y cancion.mp3 (si tienes).
-- Commit y push:
-  - `git add .`
-  - `git commit -m "Initial site files"`
-  - `git push origin main`
-- Conecta el repo en Netlify (New site from Git -> GitHub -> selecciona `josiel-netlify`). Publish directory: `.`
+- ✨ Diseño responsivo y moderno
+- 🎵 Reproductor de audio integrado
+- 📝 Formulario RSVP con Netlify Forms
+- 🗺️ Mapa integrado de Google Maps
+- ♿ Accesible (WCAG compliant)
+- 🌙 Tema oscuro elegante
 
-3) Deploy manual (drag & drop)
-- Comprime los archivos y súbelos en Netlify Drag & Drop.
+## 📁 Estructura
 
-Notas:
-- Si quieres un dominio personalizado, puedo añadírtelo (necesitarás acceso al DNS).
-- Para formularios (RSVP) o un mapa, dímelo y lo integro con Netlify Forms o una incrustación de Google Maps.
+```
+.
+├── index.html          # Página principal
+├── cancion.mp3        # Canción "Amor" - Emmanuel Cortés
+├── social.png         # Imagen para redes sociales (1200x630px)
+├── favicon.ico        # Favicon del sitio
+├── netlify.toml       # Configuración de Netlify
+└── README.md          # Este archivo
+```
+
+## 🔧 Configuración Local
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/joseluisvc883-crypto/josiel-netlify.git
+cd josiel-netlify
+```
+
+2. Abre `index.html` en tu navegador o usa un servidor local:
+```bash
+python -m http.server 8000
+# o con Node.js:
+npx http-server
+```
+
+3. Abre http://localhost:8000
+
+## 📤 Deploy en Netlify
+
+1. Conecta tu repositorio a Netlify
+2. Netlify detectará automáticamente `netlify.toml`
+3. El sitio se desplegará automáticamente
+
+## 🎵 Configurar Archivos Multimedia
+
+Reemplaza estos archivos con los tuyos:
+- **cancion.mp3**: La canción "Amor" de Emmanuel Cortés
+- **social.png**: Imagen 1200x630px para compartir en redes sociales
+
+## ❤️ Con amor, para ustedes dos.
+
+---
+*Creado con ❤️ usando HTML5 + CSS3*
