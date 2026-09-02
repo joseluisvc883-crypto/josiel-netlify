@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0f172a"/>
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <!-- Heart -->
+  <path d="M32 50 C20 40, 12 32, 12 24 C12 18, 16 14, 20 14 C24 14, 28 18, 32 24 C36 18, 40 14, 44 14 C48 14, 52 18, 52 24 C52 32, 44 40, 32 50 Z" fill="#60a5fa"/>
+  <!-- Inner accent -->
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
+</svg>
